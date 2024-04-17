@@ -6,4 +6,10 @@ module org.example.textcraft {
 
     opens org.example.textcraft to javafx.fxml;
     exports org.example.textcraft;
+    exports org.example.textcraft.huffman;
+    opens org.example.textcraft.huffman to javafx.fxml;
+    exports org.example.textcraft.Shannon;
+    opens org.example.textcraft.Shannon to javafx.fxml;
+    exports org.example.textcraft.RLE;
+    opens org.example.textcraft.RLE to javafx.fxml;
 }
