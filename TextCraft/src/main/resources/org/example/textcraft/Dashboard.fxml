@@ -2,8 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -62,15 +61,9 @@
    <bottom>
       <AnchorPane prefHeight="151.0" prefWidth="887.0" style="-fx-background-color: #4F85B5;" BorderPane.alignment="CENTER">
          <children>
-            <MenuButton fx:id="AlgorithmSelect" cache="true" contentDisplay="CENTER" layoutX="52.0" layoutY="-25.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="926.0" style="-fx-border-color: #0C1A43; -fx-background-color: ffffff; -fx-border-radius: 4;" text="Selectionner un algorithme" textOverrun="CLIP" wrapText="true">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Hauffman" />
-                  <MenuItem mnemonicParsing="false" text="Fano Shannon" />
-                  <MenuItem mnemonicParsing="false" text="RLE" />
-               </items>
-            </MenuButton>
             <Button fx:id="coderButtom" layoutX="812.0" layoutY="76.0" maxHeight="38.0" maxWidth="166.0" minHeight="31.0" minWidth="93.0" mnemonicParsing="false" onAction="#Coder" prefHeight="38.0" prefWidth="166.0" style="-fx-border-color: #0C1A43; -fx-border-radius: 4;" text="Coder" textFill="#1d3354" />
             <Button fx:id="DecoderButtom" layoutX="631.0" layoutY="76.0" maxHeight="38.0" maxWidth="164.0" minHeight="31.0" minWidth="93.0" mnemonicParsing="false" onAction="#Decoder" prefHeight="38.0" prefWidth="164.0" style="-fx-border-color: #0C1A43; -fx-background-color: #0C1A43; -fx-border-radius: 10;" text="Decoder" textFill="WHITE" />
+            <ChoiceBox fx:id="AlgorithmSelect" layoutX="50.0" layoutY="-18.0" prefHeight="37.0" prefWidth="925.0" />
          </children>
       </AnchorPane>
    </bottom>
