@@ -34,7 +34,7 @@
       <AnchorPane prefHeight="506.0" prefWidth="268.0" style="-fx-background-color: #4F85B5;" BorderPane.alignment="CENTER">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0c1a4359" height="346.0" layoutX="-82.0" layoutY="140.0" stroke="BLACK" strokeDashOffset="25.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" style="-fx-stroke-dash-array: 5;" width="269.0" />
-            <Button fx:id="BrowseButton" alignment="CENTER" layoutX="-14.0" layoutY="391.0" lineSpacing="1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: eeeeeeee; -fx-background-radius: 4;" text="Browse files" textAlignment="CENTER" textFill="#0c1a43">
+            <Button fx:id="BrowseButton" alignment="CENTER" layoutX="-14.0" layoutY="391.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#browseFiles" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: eeeeeeee; -fx-background-radius: 4;" text="Browse files" textAlignment="CENTER" textFill="#0c1a43">
                <font>
                   <Font size="11.0" />
                </font>
@@ -61,8 +61,7 @@
    <bottom>
       <AnchorPane prefHeight="151.0" prefWidth="887.0" style="-fx-background-color: #4F85B5;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="coderButtom" layoutX="812.0" layoutY="76.0" maxHeight="38.0" maxWidth="166.0" minHeight="31.0" minWidth="93.0" mnemonicParsing="false" onAction="#Coder" prefHeight="38.0" prefWidth="166.0" style="-fx-border-color: #0C1A43; -fx-border-radius: 4;" text="Coder" textFill="#1d3354" />
-            <Button fx:id="DecoderButtom" layoutX="631.0" layoutY="76.0" maxHeight="38.0" maxWidth="164.0" minHeight="31.0" minWidth="93.0" mnemonicParsing="false" onAction="#Decoder" prefHeight="38.0" prefWidth="164.0" style="-fx-border-color: #0C1A43; -fx-background-color: #0C1A43; -fx-border-radius: 10;" text="Decoder" textFill="WHITE" />
+            <Button fx:id="coderButtom" layoutX="875.0" layoutY="76.0" maxHeight="38.0" maxWidth="166.0" minHeight="31.0" minWidth="93.0" mnemonicParsing="false" onAction="#Coder" prefHeight="38.0" prefWidth="103.0" style="-fx-border-color: #0C1A43; -fx-background-radius: 10; -fx-border-radius: 10;" text="Coder" textFill="#1d3354" />
             <ChoiceBox fx:id="AlgorithmSelect" layoutX="50.0" layoutY="-18.0" prefHeight="37.0" prefWidth="925.0" />
          </children>
       </AnchorPane>

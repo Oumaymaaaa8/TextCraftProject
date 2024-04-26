@@ -7,63 +7,65 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="768.0" maxWidth="1024.0" minHeight="768.0" minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #4F85B5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.textcraft.ResultController">
-   <bottom>
-      <AnchorPane prefHeight="83.0" prefWidth="1024.0" style="-fx-background-color: 134A88;" BorderPane.alignment="CENTER">
+<BorderPane fx:id="resultPane" maxHeight="768.0" maxWidth="1024.0" minHeight="768.0" minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #4F85B5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.textcraft.ResultController">
+   <left>
+      <AnchorPane prefHeight="565.0" prefWidth="105.0" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <AnchorPane prefHeight="160.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="back" layoutX="439.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadDashboard" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: eeeeee;" text="Retour">
+            <Text fill="WHITE" layoutX="114.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votre Résultat est pret">
                <font>
-                  <Font name="Manjari Bold" size="19.0" />
+                  <Font name="Manjari Regular" size="77.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="268.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="labelLongBinaire" fill="WHITE" layoutX="111.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Longeur Binaire" wrappingWidth="167.0628204345703" AnchorPane.bottomAnchor="98.67578125" AnchorPane.leftAnchor="111.0">
+               <font>
+                  <Font name="Manjari Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="labebTauxCom" fill="WHITE" layoutX="111.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taux de Compression" wrappingWidth="234.39614868164062" AnchorPane.bottomAnchor="137.2109375" AnchorPane.leftAnchor="111.0">
+               <font>
+                  <Font name="Manjari Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="longBin" fill="WHITE" layoutX="404.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.bottomAnchor="98.67578125">
+               <font>
+                  <Font name="Manjari Regular" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="tauxxCom" fill="WHITE" layoutX="404.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.bottomAnchor="134.67578125">
+               <font>
+                  <Font name="Manjari Regular" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="retour" layoutX="698.0" layoutY="169.0" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="43.0" prefWidth="115.0" style="-fx-background-color: #0C1A43; -fx-background-radius: 10;" text="Retour" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Text fill="#0c1a43" layoutX="111.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plus de details : ">
+               <font>
+                  <Font name="Manjari Regular" size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="decode" layoutX="829.0" layoutY="168.0" mnemonicParsing="false" onAction="#decoder" prefHeight="42.0" prefWidth="115.0" style="-fx-background-color: #eeeeee; -fx-background-radius: 10;" text="Decoder" textFill="#0c1a43">
+               <font>
+                  <Font size="18.0" />
                </font>
             </Button>
          </children>
       </AnchorPane>
    </bottom>
+   <right>
+      <AnchorPane prefHeight="494.0" prefWidth="87.0" BorderPane.alignment="CENTER" />
+   </right>
    <center>
-      <BorderPane fx:id="resultPane" prefHeight="754.0" prefWidth="1024.0" style="-fx-background-color: 134A88;" BorderPane.alignment="CENTER">
-         <children>
-            <TextArea layoutX="62.0" layoutY="189.0" prefHeight="221.0" prefWidth="901.0" text="" wrapText="true" />
-            <Text fill="WHITE" layoutX="216.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le réultat est pret !">
-               <font>
-                  <Font name="Manjari Bold" size="67.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="108.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de bits utilisés : " wrappingWidth="214.7294921875">
-               <font>
-                  <Font name="Manjari Regular" size="19.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="108.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taux de compression : " wrappingWidth="201.7294921875">
-               <font>
-                  <Font name="Manjari Regular" size="19.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="108.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taille binaire : " wrappingWidth="126.7294921875">
-               <font>
-                  <Font name="Manjari Regular" size="19.0" />
-               </font>
-            </Text>
-            <Text fx:id="NbBits" fill="WHITE" layoutX="321.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" wrappingWidth="76.7294921875">
-               <font>
-                  <Font name="Manjari Regular" size="19.0" />
-               </font>
-            </Text>
-            <Text fx:id="tailleBinaire" fill="WHITE" layoutX="230.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" wrappingWidth="76.7294921875">
-               <font>
-                  <Font name="Manjari Regular" size="19.0" />
-               </font>
-            </Text>
-            <Text fx:id="tauxComp" fill="WHITE" layoutX="310.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" wrappingWidth="76.7294921875">
-               <font>
-                  <Font name="Manjari Regular" size="19.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="108.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Détails">
-               <font>
-                  <Font name="Manjari Bold" size="29.0" />
-               </font>
-            </Text>
-         </children>
-      </BorderPane>
+      <TextArea fx:id="output" prefHeight="351.0" prefWidth="832.0" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

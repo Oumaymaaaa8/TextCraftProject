@@ -25,9 +25,9 @@
       <AnchorPane prefHeight="573.0" prefWidth="415.0" BorderPane.alignment="CENTER">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4f85b5" height="776.0" layoutX="4.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="549.0" />
-            <Text fill="#eeeeee" layoutX="183.0" layoutY="772.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2024 KO . Tous droits réservés." wrappingWidth="191.56689453125">
+            <Text fill="#eeeeee" layoutX="174.0" layoutY="745.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2024 KO . Tous droits réservés." wrappingWidth="209.56689453125">
                <font>
-                  <Font size="11.0" />
+                  <Font size="12.0" />
                </font>
             </Text>
             <Text fill="#eeeeee" fontSmoothingType="LCD" layoutX="79.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue dans TextCraft ! " wrappingWidth="450.8203125">
@@ -35,9 +35,9 @@
                   <Font name="Manjari Regular" size="50.0" />
                </font>
             </Text>
-            <Text fill="#0c1a43" layoutX="79.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 100;" text="Découvrez notre application conviviale de codage de texte, offrant trois algorithmes de codage efficaces. Protégez vos données en toute simplicité dès aujourd'hui !" wrappingWidth="450.8203125">
+            <Text fill="#0c1a43" layoutX="80.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 100;" text="Découvrez notre application conviviale de codage de texte, offrant trois algorithmes de codage efficaces. Protégez vos données en toute simplicité dès aujourd'hui !" wrappingWidth="393.8203125">
                <font>
-                  <Font name="Manjari Thin" size="20.0" />
+                  <Font name="Manjari Bold" size="21.0" />
                </font>
             </Text>
             <Button fx:id="startButton" layoutX="161.0" layoutY="516.0" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="48.0" prefWidth="235.0" style="-fx-background-color: #0C1A43; -fx-background-radius: 15;" text="Démarrer" textFill="#eeeeee">

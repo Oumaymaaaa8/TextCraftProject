@@ -46,17 +46,25 @@ public class RLEClient {
     }
     public float tauxCompCodage(){
         String texteRes = LREcoder();
-        float taux = text.getBytes().length/ texteRes.length();
+        float taux = (float) text.getBytes().length / texteRes.length();
         return taux;
     }
-    public float tauxCompDecodage(){
-        String texteRes = deCompression();
-        float taux = text.getBytes().length/ texteRes.length();
-        return taux;
-    }
+
 
 
     public Long longBinaire() {
-        return 2L;
+        String texteRes = LREcoder();
+        return (long) texteRes.length();
+    }
+
+    public Long longBinaireDecodage() {
+        String texteRes = deCompression();
+        return (long) texteRes.length();
+    }
+
+    public Float tauxCompDecodage() {
+        String texteRes = deCompression();
+        float taux = text.getBytes().length/ texteRes.length();
+        return taux;
     }
 }

@@ -2,12 +2,17 @@ package org.example.textcraft;
 
 public class Result {
 
-    private String result;
+    private String text;
     private  Long longueurBinaire ;
     private  Float tauxComp;
+    private String  algorithm ;
+
+    public void setAlgorithm(String algorithm) {
+        this.algorithm = algorithm;
+    }
 
     public Result(String result, Float tauxComp, Long longueurBinaire) {
-        this.result = result;
+        this.text = result;
         this.tauxComp = tauxComp;
         this.longueurBinaire = longueurBinaire;
     }
@@ -16,8 +21,8 @@ public class Result {
 
     }
 
-    public String getResult() {
-        return result;
+    public String getText() {
+        return text;
     }
 
     public Float getTauxComp() {
@@ -28,8 +33,8 @@ public class Result {
         return longueurBinaire;
     }
 
-    public void setResult(String result) {
-        this.result = result;
+    public void setText(String text) {
+        this.text = text;
     }
 
     public void setTauxComp(Float tauxComp) {
@@ -38,5 +43,9 @@ public class Result {
 
     public void setLongueurBinaire(Long longueurBinaire) {
         this.longueurBinaire = longueurBinaire;
+    }
+
+    public String getAlgorithm() {
+        return algorithm;
     }
 }
